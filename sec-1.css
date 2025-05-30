@@ -1,0 +1,220 @@
+.sec1{
+    height: 90vh;
+    align-items: center;
+    gap: 60px;
+    display: flex;
+}
+.sec1-img img{
+    width: 250px;
+    border-radius: 50%;
+}
+.sec1-img{
+    margin-left: 100px;
+}
+.socials img{
+    width: 30px;
+    margin: 0px 10px;
+    cursor: pointer;
+}
+.data{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    
+}
+.data1{
+    font-weight: 600;
+   
+}
+.data2{
+    font-weight: 600;
+    font-size: 22px;
+}
+ h1{
+font-size: 50px;
+color: darkorange;
+}
+p{
+    font-size: 18px;
+    width: 90%;
+}
+.btns{
+    display: flex;
+    gap: 20px;
+}
+.btns >:nth-child(1) {
+    padding: 10px 20px;
+    background-color: transparent;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: 600;
+    border: 2px solid black;
+    cursor: pointer;
+}
+.btns >:nth-child(2){
+    padding: 10px 20px;
+    background-color: black;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: 600;
+    border: 2px solid black;
+    color: white;
+    cursor: pointer;
+}
+.a22{
+    color: white;
+    text-decoration: none;
+}
+.a11{
+    color: black;
+    text-decoration: none;
+     
+}
+.btns >:nth-child(1):hover{
+    background-color: black;
+   text-decoration: none;
+    color: white;
+  
+    
+}
+.a11:hover{
+   text-decoration: none;
+    color: white;
+    transition: all 0.3s ease;
+    
+}
+
+.btns >:nth-child(2):hover {
+    background-color: darkorange;
+    color: white;
+    
+    
+}
+.a22:hover{
+     text-decoration: none;
+    color: white;
+    transition: all 0.3s ease;
+}
+.socials{
+    display: flex;
+    gap: 20px;
+}
+.socials img{
+    width: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.socials img:hover{
+    transform: scale(0.9);
+    
+}
+.navbar-menu{
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .arrow{
+        display: none;
+    }
+    .sec1{
+        height: 100%;
+       flex-direction: column;
+       margin-bottom: 50px;
+    }
+    .navbar{
+        display: none;
+    }
+    .navbar-menu{
+        display: flex;
+    }
+    .navbar-menu .nav-links{
+        display: flex;
+        flex-direction: column;
+        background-color: darkorange;
+        position: fixed;
+       right: 0;
+       top: 70px;
+        padding: 10px;
+        gap: 10px;
+        border-radius: 5px;
+        margin-right: -700px;
+        transition: all 0.3s ease;
+        z-index: 100;
+    }
+    .navbar-menu .nav-links.show{
+        margin-right: 0px;
+    }
+    .hambarger i{
+       font-size: 35px;
+       padding: 4px;
+      
+    }
+    .hambarger{
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        position: fixed;
+        right: 30px;
+        top: 20px;
+        z-index: 100;
+    }
+    .navbar-menu .logo{
+        margin-top: 20px;
+        padding-left: 30px;
+    }
+    .navbar-menu .nav-links li a{
+        display: block;
+        text-decoration: none;
+       background-color: white;
+       border-radius: 5px;
+       padding: 5px;
+       font-weight: 600;
+    }
+}
+@media (max-width: 1024px){
+    .sec1{
+        flex-direction: column;
+    }
+    .data{
+        align-items: center;
+        padding-bottom: 50px;
+    }
+    .sec1-img{
+        margin-left: 0px;
+
+    }
+    .sec1-img img{
+        width: 450px;
+    }
+    p{
+        width: 70%;
+        text-align: center;
+    }
+}
+@media (max-width: 767px){
+    .sec1{
+        flex-direction: column;
+    }
+    .data{
+        align-items: center;
+    }
+    .sec1-img img{
+        width: 300px;
+    }
+    h1{
+        font-size: 40px;
+    }
+    p{
+        text-align: center;
+    }
+    .logo{
+        text-wrap: nowrap;
+    }
+    .navbar-menu .logo{
+        padding-left: 10px;
+        font-family: 25px;
+        margin-top: 25px;
+    }
+    .sec1-img img{
+        margin-top: 50px;
+    }
+}
