@@ -218,3 +218,22 @@ p{
         margin-top: 50px;
     }
 }
+
+.sec1 {
+    animation: fadeInUp 1.2s ease-in-out;
+}
+
+.sec1-img img {
+    animation: bounceIn 1.5s ease;
+    transition: transform 0.3s ease;
+}
+.sec1-img img:hover {
+    transform: scale(1.05);
+}
+
+.btns > * {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.btns > *:hover {
+    transform: translateY(-2px);
+}
