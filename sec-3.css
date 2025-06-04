@@ -115,6 +115,22 @@
 
         gap: 10px;
     }
+
+    .box2 {
+    animation: fadeInUp 1.4s ease;
+    transition: transform 0.3s ease;
+}
+.box2:hover {
+    transform: scale(1.02);
+}
+.skills-1 {
+    animation: fadeInUp 1.6s ease;
+    transition: transform 0.3s ease;
+}
+.skills-1:hover {
+    transform: translateX(5px);
+}
+
    
     .skills-1-2 >:nth-child(1){
         font-size: 18px;
