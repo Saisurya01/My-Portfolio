@@ -94,3 +94,15 @@ a:hover{
     font-weight: 600;
     color: darkorange;
 }
+
+.navbar, .navbar-menu {
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.nav-links li, .hambarger i {
+    transition: transform 0.3s ease;
+}
+.nav-links li:hover, .hambarger i:hover {
+    transform: scale(1.1);
+}
+
